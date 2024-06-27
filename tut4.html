@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Content Example</title>
+</head>
+<body>
+    <h2>Click the button to update the result:</h2>
+    <p id="result">Initial result: <span id="value">-</span></p>
+    <button onclick="updateResult()">Update Result</button>
+
+    <script>
+        function updateResult() {
+            // Simulate some computation or fetch data
+            const newValue = 40; // Replace with your actual value
+            // Update the result without refreshing the whole page
+            document.getElementById('value').textContent = newValue;
+        }
+    </script>
+</body>
+</html>
