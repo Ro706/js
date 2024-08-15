@@ -6,21 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    <span id="root">
-    </span>
-    <!-- The code snippet initializes a constant variable named “root” by referencing an HTML element with the ID “root.” 🌐🔍 -->
+    <div id="root"></div>
+
     <script>
+        // Initialize a constant variable named “root” by referencing an HTML element with the ID “root.”
         const root = document.getElementById('root');
-        //how to declare a variable
-        var a = 10;
-        console.log(a);
+
+        // Declare variables
+        const a = 10;
         const b = 20;
+        const c = 30;
+
+        // Log variables to the console
+        console.log(a);
         console.log(b);
-        let c = 30;
         console.log(c);
-        root.innerHTML = '<h1>' + a + '</h1>';
-        root.innerHTML += '<h1>' + b + '</h1>';
-        root.innerHTML += '<h1>' + c + '</h1>';
+
+        // Update the inner HTML of the root element using template literals
+        root.innerHTML = `
+            <h1>${a}</h1><br>
+            <h1>${b}</h1><br>
+            <h1>${c}</h1><br>
+        `;
     </script>
 </body>
 </html>
